@@ -1,0 +1,1 @@
+Auth Azure Function root folder

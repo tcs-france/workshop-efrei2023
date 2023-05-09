@@ -1,0 +1,5 @@
+flask==2.3.2
+flask_restful==0.3.9
+flask_cors==3.0.10
+aiohttp==3.8.4
+azure-servicebus==7.9.0

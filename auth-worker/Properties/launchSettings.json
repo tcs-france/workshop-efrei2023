@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "auth_worker": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7199",
+      "launchBrowser": false
+    }
+  }
+}
