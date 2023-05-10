@@ -140,3 +140,10 @@ az functionapp list --resource-group "[RESOURCE_GROUP]" --query "[].{appName: re
 # Publier une Azure Function
 az functionapp deployment source config-zip --resource-group "[RESOURCE_GROUP]" --name "[FUNCTION_NAME]" --src "[ZIP_FILE].zip"
 ```
+
+## Commandes Azure Redis
+
+```bash
+# Supprimer une variable
+DEL [VARIABLE_NAME]
+```
