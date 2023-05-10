@@ -40,7 +40,12 @@ A l'aide de la CLI Azure et de la CLI Docker, déployer le front créé lors du 
     - REACT_APP_EXAM_API_URL
     - REACT_APP_CENTER_API_URL
 
-## 5/ Lancer la solution
+## 5/ Supprimer le cache Redis
+A l'aide de la CLI Azure Redis sur le portail Azure, supprimer les variables :
+- USER_IDENTITY
+- EXAM_PROGRESS
+
+## 6/ Lancer la solution
 Se connecter à l'url du front et passer l'examen.
 
 Bon chance !
