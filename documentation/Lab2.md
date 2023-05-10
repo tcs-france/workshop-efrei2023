@@ -13,6 +13,7 @@ Faire un clone de ce repository sur votre machine locale (se réferer à la docu
 - Dupliquer le fichier [local.settings.default.json](../auth-worker/local.settings.default.json) et le renommer en `local.settings.json`
 - Remplacer les valeurs des variables d'environnement ConnectionStrings par les valeurs correspondantes à votre environnement Azure (se réferer au portail Azure et aux indications de animateurs)
 - Remplacer la valeur de la variable d'environnement ExamApiUrl par la valeur indiquée par les animateurs
+- Ouvrir le fichier [Register.cs](../auth-worker/Register.cs) et modifier dans les paramètres d'entrée de la méthode `Run` le nom de la queue ("exam-auth") par le nom de la queue que vous avez créé sur votre Service Bus.
 - Compiler et executer le projet auth-worker (se réferer à la documentation [Annexes](Annexes.md) pour compiler et executer en local une AZure Function).
 
 ### b. auth-api
