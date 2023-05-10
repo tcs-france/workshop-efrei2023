@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import logo from '../resources/img/tatalogo_vertical.png'
 import { Api } from '../resources/api/api-constants'
