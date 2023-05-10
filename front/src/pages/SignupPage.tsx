@@ -77,8 +77,10 @@ const SignupPage: React.FC = () => {
     const submitValue = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault()
         const response = await Api.signup(first_name, last_name, email)
-        if (response) {
+        if (response.status == 200) {
             redirectToProgressPage()
+        } else {
+            console.log(response)
         }
     }
     // Relevant redirections
@@ -126,16 +128,11 @@ const SignupPage: React.FC = () => {
     const redirectToProgressPage = () => {
         setSendProgress(true)
     }
-    const periodicalCheckExists = async () => {
-        const exists = await checkExists()
-        if (exists == true) {
-            clearInterval(checkperiodically)
-            setSendProgress(true)
-        }
-    }
-
-    redirectionsOnLoad()
-    const checkperiodically = setInterval(periodicalCheckExists, 5000)
+    
+    useEffect(() => {
+        redirectionsOnLoad()
+    }, [])
+    
     return (
         <Container>
             <PageContent>
