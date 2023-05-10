@@ -62,7 +62,7 @@ export const Api = {
 
     //Auth API
     async signup(firstName: string, lastName: string, email: string) {
-        const data = fetch(process.env.REACT_APP_AUTH_API_URL + ApiPaths.SignUp, {
+       const data = await fetch(process.env.REACT_APP_AUTH_API_URL + ApiPaths.SignUp, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -74,14 +74,6 @@ export const Api = {
                 email: email
             })
         })
-            .then((response) => response.json())
-            .then((json) => {
-                return json.data
-            })
-            .catch((error) => {
-                console.log(error)
-                return false
-            })
-        return await data
+        return data
     }
 }
