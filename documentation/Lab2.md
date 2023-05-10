@@ -29,13 +29,15 @@ Faire un clone de ce repository sur votre machine locale (se réferer à la docu
 - Remplacer la valeur de la variable d'environnement CenterApiUrl par la valeur indiquée par les animateurs
 - Restaurer les dépencances dotnet (se réferer à la documentation [Annexes](Annexes.md) pour restaurer les dépendances dotnet)
 - Lancer le projet exam-api (se réferer à la documentation [Annexes](Annexes.md) pour lancer une application dotnet)
+- Accepter la création du certificat de sécurité auto-signé
 
 ### d. front
 - Dupliquer le fichier [.env.default](../front/.env.default) et le renommer en `.env`
 - REmplacer les variables du fichier `.env` pour les adapter à votre environnement local :
-    - REACT_APP_EXAM_API_URL (url de l'api de gestion de l'examen, ex: http://localhost:5000)
-    - REACT_APP_CENTER_API_URL (url de l'api du centre d'examen, se référer à la valeur indiquée par les animateurs)
+    - REACT_APP_AUTH_API_URL (url de l'api auth-api, ex: http://localhost:4000)
+    - REACT_APP_EXAM_API_URL (url de l'api exam-api, ex: https://localhost:5000)
 - Restaurer les dépendances npm (se réferer à la documentation [Annexes](Annexes.md) pour restaurer les dépendances npm)
+- Créer la variable d'environnement NODE_TLS_REJECT_UNAUTHORIZED avec la valeur '0' (se réferer à la documentation [Annexes](Annexes.md) pour créer des variables d'environnement)
 - Lancer le projet front (se réferer à la documentation [Annexes](Annexes.md) pour lancer une application React)
 
 ### e. Tester la solution
