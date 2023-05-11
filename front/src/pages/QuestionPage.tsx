@@ -51,7 +51,7 @@ const QuestionPage: React.FC = () => {
     const handleSubmitAnswer = async (id: string) => {
         const nextQuestionExist = await Api.sendAnswer(id, answer)
         setNextQuestion(currnextQuestion => currnextQuestion = nextQuestionExist.isQuestionRemaining)
-        if(nextQuestionExist.isQuestionRemaining == true) {
+        if(nextQuestionExist?.isQuestionRemaining == true) {
             questionRequest()
         }
     }
