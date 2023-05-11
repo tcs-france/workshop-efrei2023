@@ -37,8 +37,8 @@ A l'aide de la CLI Azure et de la CLI Docker, déployer le front créé lors du 
 - Mettre à jour les variables d'environnement de l'Azure Web sur le portail Azure :
     - NODE_ENV=production
     - WEBSITES_PORT=3000
-    - REACT_APP_AUTH_API_URL
-    - REACT_APP_EXAM_API_URL
+    - REACT_APP_AUTH_API_URL (url de votre api auth-api. https://[NAMESPACE_AUTH-API].azurewebsites.net)
+    - REACT_APP_EXAM_API_URL (url de votre api exam-api. https://[NAMESPACE_EXAM-API].azurewebsites.net)
 
 ## 5/ Supprimer le cache Redis
 A l'aide de la CLI Azure Redis sur le portail Azure, supprimer les variables :
