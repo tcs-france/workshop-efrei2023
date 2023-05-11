@@ -2,8 +2,8 @@
 
 ## 1/ Déploiement de l'Azure Function
 A l'aide de la CLI Azure, déployer l'Azure Function créée lors du Lab 1 avec le code source du Lab 2 (se réferer à la documentation [Annexes](Annexes.md) :
-- Restaurer les dépendances dotnet pour une cible linux-x64
-- Publier l'Azure Function pour une cible linux-x64
+- Restaurer les dépendances dotnet pour une cible win-x64
+- Publier l'Azure Function pour une cible win-x64
 - Pousser le package sur votre Azure Function (avec la CLI Azure) 
 - Mettre à jour les variables d'environnement de l'Azure Function sur le portail Azure :
     - ConnectionStrings (AzureConnStr, Redis)
