@@ -86,11 +86,11 @@ const SignupPage: React.FC = () => {
     // Relevant redirections
     const checkExists = async () => {
         const data = await Api.userExists()
-        return data.exist
+        return data?.exist
     }
     const checkProgress = async () => {
         const data = await Api.examProgress()
-        return data.status
+        return data?.status
     }
     const redirectionsOnLoad = async () => {
         const doesExist = await checkExists()
